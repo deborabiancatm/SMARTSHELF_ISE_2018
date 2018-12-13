@@ -1,6 +1,6 @@
 $.getJSON("https://api.myjson.com/bins/loqcy", { get_param: 'value' }, function(data) {
     $.each(data, function(index, element) {
-        if(element.s1 >= 19 && element.s2 >= 19){
+        if(element.s1 >= 2 && element.s2 >= 2){
             $('<img>').attr( "src", "img/vazio.jpg").appendTo( ".main").addClass('shelf');
             $('.main').append($('<div>', {
                 text: '['+ element.ID +'] Prateleira de '+ element.tipo + ' está vazia.'}
